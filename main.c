@@ -7,7 +7,7 @@
  {
    st* temp = create_stack();
    int i;
-   for(i = 0; i < 100000000; i++)
+   for(i = 0; i < 100000; i++)
    {
      push(temp,i);
      CU_ASSERT(peek(temp) == i);
@@ -18,11 +18,11 @@
  {
    st* temp = create_stack();
    int i, aux;
-   for(i = 0; i < 50000000; i++)
+   for(i = 0; i < 100000; i++)
    {
      push(temp,i);
    }
-   for(i = 0; i < 50000000; i++)
+   for(i = 0; i < 100000; i++)
    {
      aux = peek(temp);
      pop(temp);
